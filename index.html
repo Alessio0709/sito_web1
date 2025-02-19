@@ -4,64 +4,468 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GITA A ROMA</title>
-    <style> 
+    <style>
     body {
     
     background-color: #f4f4f4;
-    
-}
 
+}    
+    
 h1 {
-    color: #333;
-    font-family: Impact;
+    font-family: Oswald;
+    color: #000000;
     font-weight: bold;
     text-align: center;
-    padding: 10px 10px;
+    font-size: 40px;
+       
+} 
+
+
+search-container {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 20px;
 }
-
-
-
-p {
-    text-align: left;
-    font-family: Arial;
+input {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     outline: none;
 }
-        
 button {
+     background-color: #f4f4f4;
+     color: black;
+     border: none;
+     padding: 8px 12px;
+     cursor: pointer;
+     border-radius: 4px;
+}
+
+}
+.section {
+     display: none; 
+     padding: 20px;
+     margin: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+     width: 300px;
+     text-align: center;
+}
+#26 {
     background-color: #f4f4f4;
     color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+    border: #f4f4f4;
+    
+    display: block;
+
+}
+#27 {
+    
+    color: black;
+    border: #f4f4f4;
+    
+    display: flex;
+    flex-direction: column;
+}
+#28 {
+    background-color: #f4f4f4;
+    color: black;
+    border: #f4f4f4;
+    
+   
+    
+
 }
 
-button:hover {
-    background-color: #005f73;
+#A {
+   padding: 10px 10px;
+   background-color: green;
+   position: 
+
+
 }
-</style>
+h2 {
+    font-family: Oswald;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    font-size: px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>TOUR DI ROMA</h1>
-        <p></p>
-    </header>
-
-    <section>
-        <button id="mioBottone">Cliccami!</button>
+   
         
-    </section>
+   
+        
 
+
+
+    </div>
+
+    <div id="home" class="search-container">
+        <h1>TOUR DI ROMA</h2>
+        <input type="text" id="searchBar" placeholder="Cerca un monumento">
+        <button id="cerca"onclick="search()">Cerca</button>
+        <button id="A" onclick="showPage('mercoledi')">Mercoledi</button>
+        <button id="A" onclick="showPage('giovedi')">Giovedi</button>
+        <button id="A" onclick="showPage('venerdi')">Venerdi</button>
+    </div>
+ 
+    <div id="mercoledi">
+         <h1>MERCOLEDI'</h1>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         <h2>Mattina</h2>
+         <button id="26" onclick="showPage('Circo massimo')">Circo massimo</button>
+         <button id="26" onclick="showPage('Terme di caracalla')">Terme di caracalla</button>
+         <button id="26" onclick="showPage('Teatro marcello')">Teatro marcello</button>
+         <button id="26" onclick="showPage('Bocca della verità')">Bocca della verità</button>
+         <h2>Pomeriggio</h2>
+         <button id="26" onclick="showPage('Fori imperiali')">Fori imperiali</button> 
+         <button id="26" onclick="showPage('Piazza venezia')">Piazza venezia</button>
+         <button id="26" onclick="showPage('Colonna traiana')">Colonna traiana</button>
+         <button id="26" onclick="showPage('Mercati traianei')">Mercati traianei</button>
+         <button id="26" onclick="showPage('Colosseo')">Colosseo</button>
+         <h2>Sera</h2>
+         <button id="26" onclick="showPage('Trastevere')">Trastevere</button>
+         <button id="26" onclick="showPage('Gianicolo')">Gianicolo</button>
+         
+
+
+
+    </div>
+    <div id="giovedi">
+         <h1>Giovedi</h1>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         <h2>Mattina</h2>
+         <button id="27" onclick="showPage('Largo argentina')">Largo Argentina</button>
+         <button id="27" onclick="showPage('Ghetto ebraico')">Ghetto ebraico</button>
+         <button id="27" onclick="showPage('Campo de' fiori')">Campo de' fiori'</button>
+         <button id="27" onclick="showPage('Campidoglio')">Campidoglio</button>
+         <button id="27" onclick="showPage('Isola tiberina')">Isola tiberina</button> 
+         <button id="27" onclick="showPage('Statua di marco aurelio')">Statua di marco aurelio</button>
+         <button id="27" onclick="showPage('Ara pacis')">Ara pacis</button>
+         <button id="27" onclick="showPage('Tomba di augusto')">Tomba di augusto</button>
+         <h2>Pomeriggio></h2>
+         <button id="27" onclick="showPage('Piazza del popolo')">Piazza del popolo</button>
+         <button id="27" onclick="showPage('Santa maria del popolo')">Santa maria del popolo</button>
+         <button id="27" onclick="showPage('Palazzo madama')">Palazzo madama</button>
+         <h1>Sera</h1>
+         <button id="26A" onclick="showPage('Piazza navona e la fontana dei quattro fiumi')">Piazza navona e la fontana dei quattro fiumi</button>
+         <button id="27" onclick="showPage('Castel sant'angelo')">Castel sant'angelo</button> 
+         <button id="27" onclick="showPage('Chiesa di san luigi dei francesi')">Ara pacis</button>
+         <button id="27" onclick="showPage('Pantheon')">Pantheon</button>
+         <button id="27" onclick="showPage('Piazza di spagna')">Piazza di spagna</button>
+         <button id="27" onclick="showPage('Fontana la barcaccia')">Fontana la barcaccia</button>
+         <button id="27" onclick="showPage('Piazza di trevi')">Piazza di trevi</button>
+         <button id="27" onclick="showPage('Fontana di trevi')">Fontana di trevi</button>
+         
+ 
+
+
+
+    </div>
+    <div id="venerdi">
+         <h2>Mattina</h2>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         
+         
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="Fori imperiali">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>FORI IMPERIALI</h1>
+        <p2>Erano il centro della vita politica e religiosa dell’antica roma.</p2>
     
-      
+
+    </div>
+    <div id="Circo massimo">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>CIRCO MASSIMO</h1>
+        <p1>E’ il più grande stadio dell'antichità ed è dedicato alle corse dei carri ed eventi pubblici, sorto nell'età imperiale.</p1>
+
+    </div>     
+    <div id="Castel sant'angelo'">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>CASTEL SANT'ANGELO</h1>
+        <p1>È una maestosa fortezza storica, originariamente costruita come mausoleo imperiale per l'imperatore Adriano.
+</p1>
+
+    </div>
+    <div id="Trastevere">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>TRASTEVERE</h1>
+        <p1>Agli inizi di Roma era territorio etrusco e venne considerata romana solo dopo la suddivisione di Roma in rioni.
+</p1>
+
+    </div>
+    <div id="Ghetto ebraico">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>GHETTO EBRAICO</h1>
+        <p1>Istituito nel 1555, è un simbolo di resilienza e speranza che ricorda l'importanza di ricordare il passato per costruire un futuro migliore</p1>
+
+    </div>
+    <div id="Piazza del popolo">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PIAZZA DEL POPOLO</h1>
+        <p1>Situata all'ingresso nord di Roma, originariamente fungeva da Porta Flaminia, una delle antiche vie d'accesso alla città.</p1>
+
+    </div>
+    <div id="Santa maria del popolo">
+        <button id="Home" onclick="showPage('home')">Home</button>
+       
+        <h1>SANTA MARIA DEL POPOLO</h1>
+        <p1>E’ una basilica importante per i culti cattolici che si svolgono al suo interno situata nel centro storico di Roma.
+</p1>
+
+    </div>
+    <div id="Campo de' fiori">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>CAMPO DE' FIORI</h1>
+        <p1>Significa “Campo dei fiori”, è un luogo di mercato ed altre attività commerciali.</p1>
+
+    </div>
+    <div id="Terme di caracalla">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>LE TERME DI CARACALLA</h1>
+        <p1>Costruite nel III secolo d.C., erano uno dei complessi termali più grandiosi dell'antica Roma, offrendo bagni, palestre e spazi per il relax e la socializzazione. </p1>
+
+    </div>
+    <div id="Mercati traianei">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>MERCATI TRAIANEI</h1>
+        <p1>Complesso architettonico realizzato nel II secolo d.C., integrava spazi destinati ad attività commerciali, amministrative e sociali.</p1>
+
+    </div>
+    <div id="Chiesa di san luigi dei francesi">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>CHIESA DI SAN LUIGI DEI FRANCESI</h1>
+        <p1>È famosa per le opere di Caravaggio nella Cappella Contarelli</p1>
+
+    </div>
+    <div id="Campidoglio">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>CAMPIDOGLIO</h1>
+        <p1>Ospita la piazza progettata da Michelangelo, il Palazzo senatorio e i Musei Capitolini.</p1>
+
+    </div>
+    <div id="Isola tiberina">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>ISOLA TIBERINA</h1>
+        <p1>È l'unica isola urbana del Tevere, al centro di Roma.</p1>
+
+    </div>
+    <div id="Piazza di spagna">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PIAZZA DI SPAGNA</h1>
+        <p1>E’ una delle piazze più importanti di Roma situata ai piedi della scalinata della Trinità dei monti.</p1>
+
+    </div>
+    <div id="Fontana la barcaccia">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>FONTANA LA BARCACCIA</h1>
+        <p1>Si trova nella piazza di Spagna a Roma e ha una forma semi-affondata.</p1>
+
+    </div>
+    <div id="Piazza san pietro">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PIAZZA SAN PIETRO</h1>
+        <p1>Progettata da Gian Lorenzo Bernini, è un simbolo di accoglienza e fede, con la sua imponente colonnata.</p1>
+
+    </div>
+    <div id="Basilica di san pietro">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>BASILICA DI SAN PIETRO</h1>
+        <p1>E’ uno dei luoghi più sacri del cristianesimo, con la celebre cupola progettata da Michelangelo e la Pietà.</p1>
+
+    </div>
+    <div id="Colosseo">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>COLOSSEO</h1>
+        <p1>Simbolo di Roma, è un antico anfiteatro dove si svolgevano combattimenti tra gladiatori e spettacoli pubblici.</p1>
+
+    </div>
+    <div id="Altare della patria">
+        <button id="Home" onclick="showPage('home')">Home</button>
+       
+        <h1>ALTARE DELLA PATRIA</h1>
+        <p1>E’ uno dei monumenti più emblematici d'Italia, inaugurato nel 1911 per celebrare il 50º anniversario dell'unità, è dedicato a Vittorio Emanuele II</p1>
+
+    </div>
+    <div id="Statua di marco aurelio">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>STATUA DI MARCO AURELIO</h1>
+        <p1>E’ un capolavoro dell’arte romana raffigurante l’imperatore con il braccio destro alzato in segno di clemenza.</p1>
+
+    </div>
+    <div id="Ara pacis">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>ARA PACIS</h1>
+        <h1>Fu commissionato dall'imperatore Augusto nel 13 a.C. per celebrare la fine delle guerre civili e il ritorno della stabilità nell'Impero Romano.</p1>
+
+    </div>
+    <div id="Tomba di augusto">
+        <button id="Home" onclick="showPage('home')">Home</button>
+       
+        <h1>TOMBA DI AUGUSTO</h1>
+        <p1>E’ un mausoleo costruito tra il 28 e il 23 a.C. per ospitare le spoglie dell'imperatore e della sua famiglia, simbolo della grandezza dell'Impero Romano.</p1>
+
+    </div>
+    <div id="Bocca della verità">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>BOCCA DELLA VERITÀ</h1>
+        <p1>Un’antica maschera di marmo situata nella Chiesa di Santa Maria in Cosmedin. Secondo la leggenda, chi mente inserendo la mano nella bocca rischia di perderla.</p1>
+
+    </div>
+    <div id="Teatro marcello">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>TEATRO MARCELLO</h1>
+        <p1>Un teatro romano fatto costruire da Giulio Cesare e completato da Augusto nel I secolo a.C. È un precursore del Colosseo e oggi ospita abitazioni moderne integrate nella struttura antica.</p1>
+
+    </div>
+    <div id="Palazzo madama">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PALAZZO MADAMA</h1>
+        <p1>E’ la sede storica del Senato e affonda le sue radici nel rinascimento.</p1>
+
+    </div>
+    <div id="Piazza di trevi">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PIAZZA DI TREVI</h1>
+        <p1>E’ celebre per la fontana di Trevi simbolo della dolce vita.</p1>
+
+    </div>
+    <div id="Villa adriana">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>VILLA ADRIANA</h1>
+        <p1>Capolavoro dell'architettura imperiale, dove la maestosità di Roma antica si intreccia con paesaggi e spazi di raffinata bellezza.</p1>
+
+    </div>
+    <div id="Largo argentina">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>LARGO ARGENTINA</h1>
+        <p1>E’ conosciuta per il ritrovamento di 4 templi e come luogo dell'assassinio di Giulio Cesare.</p1>
+    <div id="Piazza navona e la fontana dei quattro fiumi">
+    <button id="Home" onclick="showPage('home')">Home</button>
+    <h1>PIAZZA NAVONA E LA FONTANA DEI QUATTRO FIUMI</h1>
+    <h1>1 Piazza Navona: la bellezza del barocco a Roma
+          2 La Fontana dei quattro fiumi: un simbolo di Roma</h1>
+ 
+    </div>
+   
+    <div id="Piazza venezia">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PIAZZA VENEZIA</h1>
+        <p1>E’ una crocevia storica di Roma, con il Vittoriano, Palazzo Venezia e importanti vie come Via del Corso e Via dei Fori Imperiali.</p1>
+
+    </div>
+    <div id="Pantheon">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>PANTHEON</h1>
+        <p1>Significa “di tutti gli Dèi”, e Augusto lo fece costruire dedicandolo alle sette divinità planetarie.</p1>
+
+    </div>
+    <div id="Gianicolo">
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <h1>GIANICOLO</h1>
+        <p1>E’ uno dei colli più alti della città e attesta una particolare importanza fin
+dalle epoche più antiche.</p1>
+
+    </div>
+    
+
+
+    </div>
+    
+         
     <script>
-    document.getElementById("mioBottone").addEventListener("click", function() {
-    document.body.innerHTML = `
-                <h2>ciao</h2>
-                <p>Questa è una nuova sezione della pagina.</p>
-                
-            `;
-        });
+        
+        function showPage(pageId) {
+            // Nascondi tutte le pagine
+            document.querySelectorAll('div').forEach(function(page) {
+                page.style.display = 'none';
+            });
+            // Mostra la pagina selezionata
+            document.getElementById(pageId).style.display = 'block';
+        }
+        function search() {
+            let query = document.getElementById("searchBar").value;
+            
+            // Nasconde tutte le sezioni prima di mostrare quella giusta
+            document.querySelectorAll('div').forEach(sec => sec.style.display = 'none');
+            
+            // Trova e mostra la sezione corrispondente
+            let section = document.getElementById( query);
+            if (section) {
+                section.style.display = "block";
+            } else {
+                alert("Nessuna sezione trovata per il numero: " + query);
+            }
+        }
+        showPage('home');
     </script>
 </body>
 </html>
-
